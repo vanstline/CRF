@@ -78,3 +78,6 @@ export { default as App } from './App.jsx';
 
 // Letters
 export { default as Letters } from './Letters.jsx';
+
+// IndustryIncome
+export { default as IndustryIncome } from './IndustryIncome.jsx';

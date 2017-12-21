@@ -1,0 +1,43 @@
+
+.addingInfo {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5px;
+    h3 {
+        font-size: 16px;
+        text-indent: 12px;
+        height: 26px;
+        line-height: 26px;
+    }
+    li {
+        display: inline-block;
+        margin: 8px 11px;
+        padding: 0 6px;
+        height: 28px;
+        font-size: 12px;
+        line-height: 28px;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+    .incomeList {
+        text-align: center;
+        li {
+            width: 40%;
+        }
+    }
+    .active {
+        background: #ccc;
+    }
+
+    .button {
+        width: 90%;
+        margin: 10px auto;
+        height: 36px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 36px;
+        border-radius: 15px;
+        background: #ccc;
+    }
+}

@@ -44,3 +44,6 @@ export { default as MemberCard } from './MemberCard/index.jsx';
 export { default as MemberStatus } from './MemberStatus/index.jsx';
 export { default as MemberDetail } from './MemberDetail/index.jsx';
 export { default as MemberGuide } from './MemberGuide/index.jsx';
+
+// 新增补充信息
+export { default as AddingInfo } from './AddingInfo/index.jsx';

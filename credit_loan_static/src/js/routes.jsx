@@ -28,7 +28,8 @@ import {
   ExtendConfirm,
   Member,
   NotFoundPage,
-  Letters
+  Letters,
+  IndustryIncome
 } from './containers';
 
 export default (
@@ -56,6 +57,7 @@ export default (
     <Route path="annualfeeconfirm" component={AnnualFeeConfirm} />
     <Route path="annualfeeresult" component={AnnualFeeResult} />
     <Route path="letters" component={Letters} />
+    <Route path="industryIncome" component={IndustryIncome} />
     <Route path="member" component={Member} />
     <Route path="*" component={NotFoundPage} />
   </Route>

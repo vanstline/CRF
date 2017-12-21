@@ -7,7 +7,7 @@ import { WhiteSpace } from 'antd-mobile';
 class Letters extends Component {
 
     constructor(props) {
-        super()
+        super(props)
     }
 
     render() {
