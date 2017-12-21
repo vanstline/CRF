@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="信而富循环贷">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <title>信而富</title>
+    <style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: "Microsoft YaHei";
+    }
+    html,body{
+        width:100%;
+        height: 100%;
+        display: flex;
+        background-color: #EFEFF4;
+    }
+    .pic{
+        background:transparent url(./pic.png) no-repeat;
+    }
+
+    .serverError{
+        width: 100%;
+        background-color: #EFEFF4;
+        height: 100%;
+    }
+    .noNetwork{
+        height: 135px;
+        background-position: center -1254px;
+        margin-top: 3rem;
+    }
+    .desc{
+        text-align: center;
+        font-size: 0.7rem;
+        color: #b3b3b3;
+        margin-top: 1rem;
+    }
+    .CRFlogo{
+        height: 30px;
+        width: 100%;
+        margin: 0 auto;
+        background-position: center -347px;
+        background-size: 65px;
+        margin-top: 4rem;
+    }
+
+    .buttons{
+        padding: 10px 30px 0;
+        overflow: hidden;
+    }
+    .backHome{
+        border-radius: 6px;
+        font-size: 0.7rem;
+        background: #1b9ee2;
+        color: #fff;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 8px 0;
+        text-decoration: none;
+        margin-top: 3rem;
+    }
+    </style>
+</head>
+<body>
+    <section class="serverError">
+        <div class="pic noNetwork"></div>
+        <p class="desc">哎呀，登录失败，请稍后再试吧!</p>
+        <div class="pic CRFlogo"></div>
+    </section>
+    <script type="text/javascript">
+    (function(window, document) {
+		var server = {
+            init: function() {
+                this.setRem();
+                this.resetInfo();
+                if (this.getAllToken().channelNo === 'P201611290') {//r360
+                    this.handleBack();
+                }
+            },
+            resetInfo: function() {
+                var errMessage = this.getUrlParams('errMessage');
+                var elDesc = this.querySelect('.desc');
+				switch (errMessage) {
+                    case '0':
+                        break;
+					case '1':
+                        elDesc.innerHTML = '您有一笔还款正在处理中！';
+						break;
+					case '2':
+                        elDesc.innerHTML = '很抱歉，您未能通过审批。感谢您使用信而富现金贷！';
+						break;
+                    case '3':
+                        elDesc.innerHTML = '您目前没有借款，无需还款';
+                        break;
+                    case '4':
+                        elDesc.innerHTML = '当前暂不能借款';
+                        break;
+				}
+				/*'很抱歉，您未能通过审批。感谢您使用信而富现金贷！'
+                errMessage === '1' && (this.querySelect('.desc').innerHTML = '您有一笔还款正在处理中！');*/
+            },
+            handleBack: function() {
+                var _this = this;
+                var pastTime = new Date().getTime();
+                window.addEventListener("popstate", function(e) {
+                    if (new Date().getTime() - pastTime > 800) {
+                        location.href = _this.getUrlParams('return_url') || 'https://m.rong360.com/center';
+                    }
+                }, false);
+                var state = {
+                    title: "title",
+                    url: "#"
+                };
+                window.history.pushState(state, "title", "#");
+            },
+		    setRem: function() {
+                var html = document.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        html.style.fontSize = 20 * (html.clientWidth / 320) + 'px';
+                    };
+                window.addEventListener(resizeEvt, recalc, false);
+                document.addEventListener('DOMContentLoaded', recalc, false);
+            },
+            getUrlParams: function(name) {
+                var urlSearch = location.search.substring(1);
+                var urlParaArr = urlSearch.match(new RegExp("(^|&)" + name + "=([^&]*)(&|$)"));
+                return urlParaArr && urlParaArr[2];
+            },
+            splitEntrance: function (str) {
+                const splitChannelIndex = str.lastIndexOf('_') + 1;
+                const splitProductIndex = str.indexOf('_') + 1;
+                return {
+                    channel: str.substring(splitChannelIndex),
+                    product: str.substring(splitProductIndex, splitChannelIndex - 1),
+                };
+            },
+            getAllToken: function () {
+                const entrance = this.getUrlParams('entrance');
+                if (entrance) {
+                    const channelNo = this.splitEntrance(entrance).channel;
+                    const productNo = this.splitEntrance(entrance).product;
+                    return {
+                        deviceType: entrance,
+                        channelNo: channelNo,
+                        productNo: productNo
+                    };
+                } else {
+                    return {};
+                }
+            },
+            querySelect: function(el) {
+                return document.querySelector(el);
+            }
+		};
+        server.init();
+    })(window, document);
+    </script>
+</body>
+</html>

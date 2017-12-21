@@ -1,0 +1,169 @@
+
+.tooltip-fee {
+  .am-popover {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  .am-popover-inner {
+    height: auto;
+    padding: .02rem .40rem;
+    font-size: .22rem;
+    color: #646464;
+    background-color: #E8F3FE;
+    box-shadow: none;
+    text-align: center;
+    .am-popover-inner-wrapper {
+      background-color: #E8F3FE;
+    }
+  }
+  .am-popover-arrow {
+    background-color: #E8F3FE;
+    width: .2rem;
+    height: .2rem;
+  }
+}
+.fee-member {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #efeff4;
+  .fee-member-wrap {
+    ul {
+      .member-li {
+        background-color: #fff;
+        margin-top: .3rem;
+        padding: .3rem .6rem;
+        .member-title {
+          font-size: .32rem;
+          padding-bottom: .2rem;
+          border-bottom: 1px solid #E1E1E1;
+          padding-left: .6rem;
+        }
+        .member-body {
+          display: flex;
+          margin-top: .5rem;
+          .member-fee {
+            flex: 5;
+            p {
+              color: #646464;
+              strong {
+                font-size: .54rem;
+              }
+            }
+            .member-price {
+              color: #000;
+              font-size: .32rem;
+              .color-232323 {
+                font-size: .42rem;
+                color: #232323;
+              }
+            }
+            .back {
+              color: #3693FD;
+              text-decoration: underline;
+            }
+          }
+          .member-button {
+            flex: 2;
+            button {
+              width: 100%;
+              font-size: .32rem;
+              padding: .1rem;
+            }
+          }
+        }
+      }
+      .member-1 {
+        .member-title {
+          background: url(../images/gold.png) no-repeat;
+          background-size: 7%;
+        }
+      }
+      .member-2 {
+        .member-title {
+          background: url(../images/platinum.png) no-repeat;
+          background-size: 7%;
+        }
+      }
+      .member-3 {
+        .member-title {
+          background: url(../images/diamond.png) no-repeat;
+          background-size: 7%;
+        }
+      }
+    }
+  }
+
+  .member-description {
+    padding: 1rem .6rem 0;
+    color: #646464;
+    .member-description-title {
+      font-size: .32rem;
+      padding-left: .5rem;
+      background: url(../images/description.png) no-repeat;
+      background-size: 5%;
+    }
+    ul {
+      li {
+        padding-left: .5rem;
+      }
+    }
+  }
+}
+
+
+.fee-content {
+  background-color: #efeff4;
+  height: 100%;
+}
+
+.annual-guide {
+  overflow: scroll;
+  font-size: 0;
+  text-align: center;
+  .guide-head {
+    position: relative;
+    .mapArea {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 80%;
+      height: 1rem;
+    }
+  }
+  .guide-footer {
+    position: relative;
+    .mapArea {
+      position: absolute;
+      top: 0;
+      left: 10%;
+      width: 80%;
+      height: 1rem;
+    }
+  }
+}
+
+.annual-loan {
+  font-size: 0;
+  text-align: center;
+  .guide-bottom {
+    position: relative;
+    .mapArea {
+      position: absolute;
+      top: 0;
+      left: 10%;
+      width: 80%;
+      height: 1rem;
+    }
+  }
+}
+
+.annualFeeTips {
+  margin-top: 2rem;
+  font-size: .3rem;
+  text-align: center;
+}
+

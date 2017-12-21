@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title></title>
+  <meta name="description" content="绑定银行卡" />
+  <meta name="keywords" content="绑定银行卡" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" /><!--指定全屏-->
+  <!--<meta name="apple-mobile-web-app-status-bar-style" content="black" />指定苹果手机顶部栏，没效果-->
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="apple-mobile-web-app-title" content="绑定银行卡" />
+
+</head>
+<body>
+  <div id="app"></div>
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    // tracker methods like "setCustomDimension" should be called before "trackPageView"
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    window.onload = function() {//防止在安卓端阻塞加载
+      var u="//piwik.crfchina.com/piwik/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '23']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    };
+    /*
+    (function() {
+      var u="//piwik.crfchina.com/piwik/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '23']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+    */
+  </script>
+  <!-- End Piwik Code -->
+  <script src="/user_center/login.js"></script>
+</body>
+</html>

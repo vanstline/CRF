@@ -1,0 +1,32 @@
+.crf-confirm {
+  .am-list-item {
+    .am-list-line {
+      min-height: 1.1rem;
+      .am-list-content {
+      }
+    }
+  }
+}
+
+.crf-confirm-amount {
+  color: #323232;
+  .number {
+    font-size: .36rem;
+  }
+}
+
+.crf-confirm-des {
+  position: absolute;
+  bottom: 0;
+  right: .3rem;
+  font-size: .22rem;
+  color: #646464;
+}
+
+.tooltip-icon, .crf-confirm-des-text {
+  vertical-align: middle;
+}
+
+.crf-confirm-des-text {
+  margin-left: .1rem;
+}

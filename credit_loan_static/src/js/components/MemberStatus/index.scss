@@ -1,0 +1,32 @@
+.root {
+  width: 100%;
+}
+
+.date {
+  font-size: .22rem;
+  color: #646464;
+}
+
+.amount {
+  font-size: .44rem;
+}
+
+.buttonContainer {
+  padding: .1rem .3rem;
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: middle;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  button {
+    font-size: .32rem;
+    padding: .1rem .4rem;
+  }
+}
+
+.error {
+  flex: 1;
+  padding: 0 .3rem 0 0;
+}

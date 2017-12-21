@@ -1,0 +1,203 @@
+.crf-swipes {
+  position: relative;
+  width: 100%;
+  padding: .7rem 0 .25rem;
+  background: #fff;
+  border-bottom: 1px solid #D6D7DC;
+  font-size: .32rem;
+  text-align: center;
+  color: #323232;
+  &.extend-rulers {
+    padding: .25rem 0 0;
+    border-top: 1px solid #E6E8EC;
+    .crf-swipes-title {
+      padding: 0 20px;
+      color: #818C9E;
+      text-align: left;
+    }
+    .crf-swipes-amount {
+      top: .8rem;
+      transform: translate(-48%);
+      padding: 0 0 .7rem;
+    }
+    .crf-swipes-content {
+      height: 1.2rem;
+      .crf-swipes-rulers {
+        height: 1.2rem;
+      }
+    }
+    .crf-swipes-axis {
+      .crf-swipes-axis-inner {
+        height: 1.2rem;
+        background: url(../images/loan-axis.png) no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+.crf-swipes-title {
+  position: relative;
+  font-size: .28rem;
+  margin-bottom: 1.5rem;
+}
+
+.crf-swipes-title-text, .crf-swipes-title-link {
+  vertical-align: middle;
+}
+
+.crf-swipes-title-link {
+  position: absolute;
+  bottom: 3px;
+  display: inline-block;
+  > a {
+    display: block;
+    width: .40rem;
+    height: .40rem;
+    margin-left: .08rem;
+    background: url(../images/reset-loan.png) no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.crf-swipes-amount-text {
+  display: inline-block;
+  font-size: .9rem;
+  line-height: 1rem;
+  margin-right: .1rem;
+  font-family: "Helvetica Neue";
+}
+
+.crf-swipes-amount-link {
+  font-size: .28rem;
+  text-decoration: underline;
+}
+
+.crf-swipes-amount {
+  position: absolute;
+  top: 1.1rem;
+  left: 50%;
+  padding: .1rem 0 .7rem;
+}
+
+.crf-swipes-content {
+  position: relative;
+  width: 100%;
+  height: 114px;
+  border-bottom: 1px solid #909090;
+}
+
+.crf-swipes-rulers {
+  position: absolute;
+  width: 100%;
+  height: 114px;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+.crf-swipes-description {
+  padding: .2rem 0 0;
+  font-size: .22rem;
+  color: #646464;
+}
+
+.crf-swipes-axis {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 40%;
+  border-top: 1px solid #E1E1E1;
+  z-index: 2;
+  .crf-swipes-axis-inner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: .22rem;
+    height: 113px;
+    background: url(../images/axis.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+  }
+}
+
+.crf-rulers {
+  position: absolute;
+  height: 100%;
+  padding-top: 2rem;
+}
+
+.crf-rulers:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.crf-ruler {
+  position: relative;
+  width: 9px;
+  height: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #666;
+  box-sizing: border-box;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 1px;
+    bottom: 0;
+    left: 4px;
+    background-color: #909090;
+    opacity: .6;
+  }
+  &:nth-of-type(10n), &:first-child {
+    &:before {
+      content: "";
+      position: absolute;
+      height: 10px;
+      width: 1px;
+      bottom: 0;
+      left: 4px;
+      background-color: #666;
+    }
+  }
+}
+
+.crf-repay-modal {
+  &.am-modal-transparent {
+    .am-modal-content {
+      padding-top: .2rem;
+      .am-modal-body {
+        padding: 0 0 .3rem;
+      }
+    }
+  }
+  .am-modal-header {
+    padding: 0;
+    font-family: "Helvetica Neue";
+    color: #323232;
+    padding: 0 0 .2rem;
+  }
+}
+
+.crf-present-real-amount-num {
+  font-size: .36rem;
+  color: #141414;
+}
+
+.crf-present-coupons {
+  position: relative;
+}
+
+.crf-present-coupons-fee {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: .2rem;
+  color: #FF7F18;
+}

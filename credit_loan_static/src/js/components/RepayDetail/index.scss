@@ -1,0 +1,33 @@
+.root {
+  height: 5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: .28rem;
+  color: #646464;
+}
+
+.repayContainer {
+
+}
+
+.repayTitle {
+  line-height: .56rem;
+  font-size: .20rem;
+  background: rgba(144,144,144,0.20);
+}
+
+.repayTitleLeft {
+  margin-left: .2rem;
+  color: #646464;
+}
+
+.repayTitleRight {
+  flex: 1;
+  margin-right: .2rem;
+  text-align: right;
+  color: #FA4548;
+}
+
+.repayTable {
+  margin: .1rem 0;
+}

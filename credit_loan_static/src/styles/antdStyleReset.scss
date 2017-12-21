@@ -1,0 +1,410 @@
+.am-list-item {
+  /*padding-left:.3rem;*/
+  padding-left: 0;
+  min-height: .9rem;
+  .am-list-line {
+    padding-right: .3rem;
+    padding-left: .3rem;
+    min-height: 1rem;
+    .am-list-content {
+      font-size: .34rem;
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+    }
+    .am-list-extra {
+      font-size: .28rem;
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+      flex-basis: 45%;
+      color: #323232;
+    }
+    .am-list-arrow {
+      width: .3rem;
+      height: .3rem;
+      margin-left: .16rem;
+    }
+  }
+  .am-input-label {
+    color: #646464;
+    font-size: 0.32rem;
+  }
+  .am-input-control {
+    font-size: 0.34rem;
+    input {
+      text-align: right;
+      color: #323232;
+      font-size: 0.32rem;
+    }
+  }
+  .am-input-extra {
+    color: #646464;
+    font-size: 0.2rem;
+    margin-left: 0.2rem;
+    line-height: normal;
+    max-height: 0.42rem;
+  }
+}
+
+.crf-list {
+  .am-list-item {
+    &.crf-present-real-amount {
+      .am-list-line {
+        .am-list-content {
+          font-size: .32rem;
+          text-align: right;
+        }
+      }
+    }
+    .am-list-line {
+      .am-list-content {
+        font-size: .28rem;
+        color: #323232;
+      }
+    }
+  }
+}
+
+.crf-credit {
+  .am-list-body {
+    &:after {
+      border: 0;
+    }
+  }
+}
+
+.crf-present.am-list-item {
+  .am-list-line {
+    .am-list-extra {
+      color: #3693FD;
+    }
+  }
+}
+
+.crf-credit-item.am-list-item {
+  .am-list-line {
+    .am-list-extra {
+      padding: 0;
+      font-size: .22rem;
+      color: #818C9E;
+      flex-basis: 60%;
+    }
+  }
+}
+
+.am-list-body {
+  border-top: 0;
+  &:after {
+    border: 0;
+  }
+}
+
+.am-flexbox {
+  text-align: left;
+  overflow-y: hidden;
+  align-items: center;
+  .am-flexbox-item {
+    flex: 1;
+    margin-left: .16rem;
+    min-width: .2rem;
+  }
+}
+
+.am-grid .am-flexbox .am-flexbox-item.am-grid-item:active{
+  background: transparent;
+}
+
+.am-whitespace.am-whitespace-md {
+  background: #efeff4;
+  height: 10px;
+}
+
+
+/*选择城市控件*/
+.am-picker-popup-item{
+  font-size: 0.34rem;
+  padding: 0.18rem 0.3rem;
+}
+
+.am-picker-col {
+  height: 4.76rem;
+}
+
+.am-picker-col-content {
+  padding: 2.04rem 0;
+}
+
+.am-picker-col-item {
+  font-size: 0.32rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+}
+
+.am-picker-col-item-selected {
+  font-size: 0.34rem;
+}
+
+.am-picker-col-mask {
+  background-size: 100% 2.04rem;
+}
+
+.am-picker-col-indicator {
+  height: 0.68rem;
+  top: 2.04rem;
+}
+
+.am-modal-header {
+  position: relative;
+  padding: .12rem .3rem .12rem;
+  z-index: 1;
+}
+
+.am-modal.am-modal-transparent .am-modal-content {
+  padding-top: 0.3rem;
+  border-radius: 0.14rem;
+}
+
+.am-modal-title {
+  font-size: 0.36rem;
+}
+
+.am-modal.am-modal-transparent .am-modal-content .am-modal-body {
+  padding: 0 0.3rem 0.3rem;
+  font-size: 0.28rem;
+}
+
+.am-modal-button-group-h .am-modal-button {
+  font-size: 0.32rem;
+  height: 1rem;
+  line-height: 1rem;
+}
+
+.am-modal-close {
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+}
+
+.am-modal-close-x {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/*toast*/
+.am-toast {
+  font-size: .28rem;
+}
+
+.am-toast-notice-content .am-toast-text {
+  padding: .18rem .3rem;
+}
+
+.am-toast-notice {
+  bottom: 40px;
+}
+
+
+/*银行号码*/
+.am-list-item.am-input-item{
+  height: .7rem;
+  padding:0 0 0 1.1rem;
+}
+
+.am-list-item .am-input-control{
+  font-size: .34rem;
+}
+
+.am-list-item .am-input-control input{
+  font-size: .34rem;
+}
+
+.am-list-item.am-input-item:after{
+  border:0;
+}
+
+.coupons-list-content {
+  .am-list-body {
+    margin: 0 .2rem;
+    background-color: transparent;
+    border-top: 0;
+    &:after {
+      border-bottom: 0;
+    }
+  }
+}
+
+.am-table th, .am-table td {
+  padding: .1rem .2rem .1rem 0;
+  font-size: .28rem;
+  color: #646464;
+  line-height: 0.46rem;
+  text-align: right;
+  font-weight: normal;
+  &:first-child {
+    text-align: left;
+  }
+  border: 0;
+}
+
+.am-table th, .am-table td {
+  background: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  &:first-child {
+    text-align: right;
+  }
+}
+
+.am-table td {
+  font-size: .22rem;
+}
+
+.am-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.am-table td.status {
+  color: #3693FD;
+}
+
+.am-steps-item.am-steps-status-process {
+  .am-steps-head-inner {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.am-tabs-bar {
+  .am-tabs-tab {
+    height: auto;
+    padding: .26rem 0;
+    font-size: .32rem;
+    color: #909090;
+    line-height: normal;
+  }
+  .am-tabs-tab-active {
+    color: #3692FD;
+  }
+}
+
+.am-tabs-ink-bar {
+  height: 2px;
+  background-color: #3692FD;
+}
+
+.am-popover-arrow {
+  width: .14rem;
+  height: .14rem;
+}
+
+.am-popover-inner {
+  font-size: .3rem;
+  color: #646464;
+  border-radius: .06rem;
+  box-shadow: 0 0 .04rem rgba(0, 0, 0, 0.21);
+  height: 5rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.am-popover {
+  .am-popover-item {
+    padding: 0;
+  }
+  .am-popover-item-container {
+    min-width: 2.6rem;
+    height: .84rem;
+    padding: 0 0.5rem;
+  }
+}
+
+.am-popover-placement-bottomRight {
+  .am-popover-arrow {
+    top: -.07rem;
+    right: .16rem;
+  }
+}
+
+
+/*借款表格*/
+.am-table td.result {
+  color: orange;
+}
+
+
+/*modal*/
+.crf-dialog {
+
+  .am-modal-content {
+    background-color: #F6F6F6;
+  }
+  .am-modal-button-group-v .am-modal-button {
+    font-size: .34rem;
+    height: .87rem;
+    line-height: .87rem;
+    color: #007AFF;
+  }
+
+  .am-modal-title {
+    font-size: .34rem;
+  }
+
+  .am-modal.am-modal-transparent .am-modal-content {
+    padding-top: 0.12rem;
+  }
+
+  .am-modal.am-modal-transparent .am-modal-content .am-modal-body {
+    padding: .18rem 0 .4rem;
+    color: #000;
+    font-size: .26rem;
+  }
+}
+
+.am-modal.am-modal-transparent.crf-extend-date-modal {
+  .am-modal-content {
+    padding-top: .1rem;
+    background-color: #f3f3f3;
+  }
+}
+
+.result.am-list-item {
+  .am-list-line {
+    .am-list-extra {
+      color: #FF7F18;
+    }
+  }
+}
+
+.am-modal-button-group-v .am-modal-button {
+  font-size: .36rem;
+  height: auto;
+  line-height: .9rem;
+}
+
+.crf-extend-date-list,
+.crf-extend-date-detail-list {
+  .am-list-item {
+    .am-list-line {
+      padding: 0;
+      .am-list-extra {
+        flex-basis: 60%;
+      }
+    }
+  }
+}
+
+.crf-extend-date-detail-list {
+  .am-list-item {
+    .am-list-line {
+      .am-list-content {
+        color: #818C9E;
+      }
+    }
+  }
+}
+
+.crf-fee {
+  .am-list-item.am-list-item-middle .am-list-line {
+    align-items: baseline;
+  }
+}

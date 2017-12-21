@@ -1,0 +1,21 @@
+// mixins
+@define-mixin btn
+$width: auto,
+$padding-tb: 0.2rem,
+$color: #fff,
+$background-color: #3693FD,
+$font-size: 0.25rem,
+$border-radius: 1rem,
+$border: 0,
+{
+  width: $width;
+  padding: $padding-tb 0.1rem;
+  color: $color;
+  background-color: $background-color;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  border: $border;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}

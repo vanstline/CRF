@@ -1,0 +1,47 @@
+.root {
+  position: relative;
+  width: 89%;
+  height: 30%;
+  min-height: 4.2rem;
+  margin: 30px auto 10px;
+  color: #fff;
+  font-size: .28rem;
+  background: url(../../../images/credit-bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.external {
+  background: url(../../../images/external-bg.png) no-repeat;
+  background-size: 100%;
+  .remain, .total {
+    display: none;
+  }
+}
+
+@media screen {
+  .remain,
+  .total {
+    position: absolute;
+    @media (max-device-width: 320px) {
+      font-size: .26rem;
+    }
+  }
+  .remain {
+    top: 35%;
+    left: .3rem;
+    .title {
+      opacity: .6;
+    }
+    .amount {
+      font-size: .6rem;
+      @media (max-device-width: 320px) {
+        font-size: .53rem;
+      }
+    }
+  }
+}
+
+.total {
+  top: 52%;
+  right: .3rem;
+}

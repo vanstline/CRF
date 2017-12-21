@@ -1,0 +1,54 @@
+.root {
+  position: relative;
+  width: 100%;
+  padding-top: .42rem;
+  padding-bottom: .42rem;
+}
+
+
+.member-description {
+  padding: 0 .6rem;
+  margin-bottom: .2rem;
+  color: #646464;
+  .member-description-title, .member-return-title {
+    font-size: .32rem;
+    padding-left: .5rem;
+    background: url(../../../images/description.png) no-repeat;
+    background-size: 5%;
+    background-position: 0 3px;
+  }
+  .member-return-title {
+    background-image: url(../../../images/return.png);
+  }
+  ul {
+    margin-top: .1rem;
+    li {
+      padding-left: .5rem;
+    }
+  }
+  .contract-li {
+    display: flex;
+    span {
+      flex: 11;
+    }
+    .orderLi {
+      flex: 1;
+    }
+  }
+}
+
+.tipsData {
+  position: relative;
+  padding-left: 1rem;
+  margin-top: .2rem;
+  ol {
+    li {
+      padding-left: .5rem;
+    }
+  }
+  .tipsIcon {
+    position: absolute;
+    top: 0;
+    left: .5rem;
+  }
+}

@@ -1,0 +1,32 @@
+.root {
+  padding: 0 20px;
+  font-size: .28rem;
+}
+
+.container {
+  margin: 20px auto 0;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  padding: .1rem 0 .2rem;
+  &:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.title {
+  color: #323232;
+  font-size: .28rem;
+}
+
+.detail,
+.deadline {
+  color: #818C9E;
+  font-size: .22rem;
+  > div {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}

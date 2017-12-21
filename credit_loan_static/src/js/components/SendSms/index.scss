@@ -1,0 +1,63 @@
+.root {
+  padding: .4rem .3rem 0 .3rem;
+  font-size: .28rem;
+  color: #646464;
+}
+
+.sendSmsText {
+  flex: 1;
+  min-width: 75%;
+  span {
+    color: #f60;
+  }
+}
+
+.error {
+  color: #FA4548;
+}
+
+.sendSmsAction {
+  flex: 1;
+  margin-left: 0.1rem;
+  text-align: right;
+}
+
+.sendSmsInput {
+  width: 100%;
+  height: 0.9rem;
+  margin: 0.2rem 0;
+  position: relative;
+  .originInput {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    text-indent: -999rem;
+    margin-left: -100%;
+  }
+  .targetInput {
+    width: 100%;
+    height: 100%;
+    border: #8C8C8C 1px solid;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    input {
+      padding: 0;
+      width: 16.6%;
+      height: 100%;
+      float: left;
+      background: #fff;
+      text-align: center;
+      font-size: 0.36rem;
+      border: none;
+      border-right: #E1E1E1 1px solid;
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+}

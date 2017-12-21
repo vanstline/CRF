@@ -1,0 +1,23 @@
+.crf-day-list {
+  background-color: #FAFAFA;
+  ul {
+    padding: 0 .3rem;
+    .crf-day-list-sub {
+      display: flex;
+      padding: .15rem 0;
+      border-bottom: 1px solid #EEEEEE;
+      color: #646464;
+      span {
+        flex: 1;
+        font-size: .3rem;
+      }
+      span:last-child {
+        text-align: right;
+      }
+    }
+    
+    .crf-day-list-sub:last-child {
+      border-bottom: none;
+    }
+  }
+}

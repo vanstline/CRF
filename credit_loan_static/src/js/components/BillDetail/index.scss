@@ -1,0 +1,23 @@
+.root {
+  align-items: center;
+  color: #fff;
+  padding: 0.9rem 0 0;
+  text-align: center;
+  font-size: 0.28rem;
+}
+
+.credit {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.button {
+  width: 50%;
+  margin: 0.7rem auto 0;
+  button {
+    width: 100%;
+    border: 1px solid #fff;
+    background: transparent;
+    cursor: pointer;
+  }
+}

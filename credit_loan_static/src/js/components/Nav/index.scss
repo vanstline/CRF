@@ -1,0 +1,66 @@
+.root {
+  color: #000;
+  height: 36px;
+  overflow: hidden;
+  position: relative;
+  background-color:#fff;
+}
+
+.navbarLeft, .navbarRight, .navbarTitle {
+  float: left;
+  display: inline-block;
+}
+
+.navbarLeft {
+  height:100%;
+  font-size: 0.32rem;
+}
+
+.navbarTitle {
+  float: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: .36rem;
+  white-space: nowrap;
+}
+
+.navbarRight {
+  float: right;
+  font-size: .32rem;
+  margin-right: .3rem;
+  padding-top: .1rem;
+}
+
+.navbarLeftIcon, .navbarRightIcon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navbarLeftIcon{
+  width: 24px;
+  height: 100%;
+  background:url(../../../images/back-icon-black.png) no-repeat center center;
+  background-size: 50%;
+  margin-left:.06rem;
+}
+
+.dark {
+  color: #646464;
+}
+
+.iosTopBar {
+  width: 100%;
+  height: .4rem;
+  background-color: #000;
+}
+
+.help {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background:url(../../../images/help.png) no-repeat center center;
+  background-size: 100% 100%;
+  margin-top: 4px;
+}

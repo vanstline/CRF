@@ -1,0 +1,67 @@
+.root {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-top: 0.42rem;
+  padding-bottom: 0.42rem;
+  background-color: #fff;
+  border-bottom: 1px solid #D6D7DC;
+  a {
+    font-size: 0.32rem;
+    color: #459BFE;
+    line-height: 0.32rem;
+  }
+}
+
+.resultTitle, .resultCash, .resultMessage {
+  line-height: 0.48rem;
+  font-size: 0.34rem;
+  color: #323232;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.resultTitle {
+  margin-top: 0.3rem;
+}
+
+.resultMessage {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.22rem;
+  color: #646464;
+  line-height: 0.32rem;
+}
+
+.resultStatus {
+  width: 0.81rem;
+  height: 0.81rem;
+  margin: 0 auto;
+  background: url(../../../images/processing-icon.png) no-repeat 0 0;
+  background-size: 100%;
+}
+
+.failed {
+  background-image: url(../../../images/failed-icon.png);
+}
+
+.success {
+  background-image: url(../../../images/success-icon.png);
+}
+
+.resultMessageText, .resultMessageWarning {
+  vertical-align: middle;
+}
+
+.resultMessageText {
+  line-height: .4rem;
+}
+
+.resultMessageWarning {
+  display: inline-block;
+  margin-top: -3px;
+  margin-left: .1rem;
+  width: .28rem;
+  height: .28rem;
+  background: url(../../../images/warning-icon.png) no-repeat 0 0;
+  background-size: 100%;
+}

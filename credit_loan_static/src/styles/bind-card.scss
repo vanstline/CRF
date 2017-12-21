@@ -1,0 +1,512 @@
+html,body,#app{
+  height:100%;
+}
+
+body{
+  color: #323232;
+}
+
+
+.bind-card-main{
+  height:100%;
+}
+
+.bind-card-wrap{
+  height:100%;
+  background-color:#EFEFF4;
+  /*font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;*/
+  article{
+    background-color: #EFEFF4;
+  }
+}
+
+.color-FA4548{
+  color:#FA4548;
+}
+
+.color-323232{
+  color: #323232 !important;
+}
+
+.map-wrap{
+  display: flex;
+  border-bottom: 1px solid #E6E7EC;
+}
+.sub-page-wrap ul{
+  background-color: #fff;
+}
+.sub-page-wrap li:last-child .map-wrap{
+  border-bottom: 0;
+}
+.sub-page-wrap{
+  background-color: #efeff4;
+  .bind-card-wrap{
+    height:auto;
+    background: #fff;
+  }
+}
+
+/*support card*/
+.bank-icon{
+  flex:6;
+  padding:.36rem 0 .34rem 1.5rem;
+  font-size:.3rem;
+  position: relative;
+  color: #323232;
+}
+.bank-icon span{
+  position: absolute;
+  top:.15rem;
+  left:.3rem;
+  width:.8rem;
+  height:.8rem;
+  background: url(../images/result_bank.png) no-repeat .06rem -.1rem;
+  background-size: 90%;
+}
+
+.CEB span{
+  /*background-position:.06rem -11.35rem;*/
+  background-position: .0rem -12.65rem;
+  background-size: 100%;
+}
+.GDB span{
+  background-position:.06rem -7.2rem;
+}
+.ABC span{
+  background-position: .06rem -5.2rem;
+}
+.PAB span{
+  /*background-position: .04rem -8.85rem;
+  background-size: 96%;*/
+  background-position: .0rem -9.2rem;
+  background-size: 100%;
+}
+.CIB span{
+  background-position:.035rem -6.65rem;
+  background-size: 96%;
+}
+.PSBC span{
+  background-position: .06rem -4.16rem;
+}
+.CMB span{
+  background-position: .06rem -1.1rem;
+}
+.BOC span{
+  background-position: .06rem -3.11rem;
+}
+.CITIC span{
+  /*background-position: .06rem -9.3rem;*/
+  background: url(../images/CITIC.png) no-repeat;
+  background-size: 100%;
+}
+.CCB span{
+  background-position: .06rem -2.15rem;
+}
+.HXB span{
+  /*background-position:.06rem -10.35rem;*/
+  background: url(../images/HXB.png) no-repeat;
+  background-size: 100%;
+
+}
+.CMBC span{
+  /*background-position: .06rem -12.4rem;*/
+  background: url(../images/CMBC.png) no-repeat;
+  background-size: 100%;
+}
+.BCM span{
+  /*background-position: .08rem -13.4rem;*/
+  background: url(../images/BCM.png) no-repeat;
+  background-size: 100%;
+}
+
+.check-bank-card{
+  flex:6;
+  padding: .36rem 0 .34rem;
+  font-size: .3rem;
+  position: relative;
+  color: #909090;
+}
+.hide-support-card-num .support-bank-card-num{
+  display: none;
+}
+.support-bank-card-num{
+  background-color: #EFEFF4;
+  padding: .3rem;
+}
+.hide-support-card-num{
+  .arrow-down{
+    position: absolute;
+    right: .3rem;
+    top: .4rem;
+    width: .5rem;
+    height: .5rem;
+    &:before{
+      top: 0;
+      right: .08rem;
+      width: .2rem;
+      height: .2rem;
+      transform: rotate(-135deg);
+      position: absolute;
+      border-left: 2px solid #909090;
+      border-top: 2px solid #909090;
+      content: '';
+    }
+  }
+}
+
+
+.arrow-down{
+  position: absolute;
+  right: .3rem;
+  top: .35rem;
+  width: .5rem;
+  height: .5rem;
+  &:before{
+    top: .2rem;
+    right: .08rem;
+    width: .2rem;
+    height: .2rem;
+    transform: rotate(45deg);
+    position: absolute;
+    border-left: 2px solid #909090;
+    border-top: 2px solid #909090;
+    content: '';
+  }
+}
+
+/*清除按钮*/
+.clearVal{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  .clearInput{
+    background-color: #ccc;
+    position: absolute;
+    top: .2rem;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  .closeBtn{
+    position: absolute;
+    line-height:0;
+    vertical-align:middle;
+    -webkit-transform: rotate(45deg);
+    top: .16rem;
+    right: 3px;
+    width:11px;
+    height:2px;
+    background-color:#fff;
+    font-size: 0;
+  }
+  .closeBtn:after{
+    width:11px;
+    height:2px;
+    background-color:#fff;
+    content:'.';
+    display:block;
+    -webkit-transform: rotate(-90deg);
+  }
+}
+
+.telInput{
+  top:.45rem;
+  right:.6rem;
+  .clearInput{
+    top:0;
+  }
+}
+
+.n{
+  display: none !important;
+}
+
+
+/*rebindcard*/
+.bind-card-status{
+  padding: 1rem .2rem;
+  .fail{
+    background: url(../images/error.png) no-repeat;
+  }
+  .success{
+    background: url(../images/success.png) no-repeat;
+  }
+  .wait{
+    background: url(../images/processing-icon.png) no-repeat;
+  }
+  .img{
+    width:.8rem;
+    height:.8rem;
+    margin:0 auto .3rem;
+    background-size:100%;
+  }
+  p{
+    text-align: center;
+    font-size:.36rem;
+    color: #323232;
+  }
+}
+.next-page{
+  padding: 0 0.3rem;
+  margin-top: 35%;
+  button{
+    width: 100%;
+    padding: .15rem 0;
+    border-radius: .5rem;
+    font-size: .36rem;
+  }
+}
+
+/*antd mobile*/
+.bind-card-wrap{
+  /*选择城市*/
+  .am-list-item {
+    min-height: 0.6rem;
+    padding-left:0;
+    padding-bottom: 0.3rem;
+    .am-list-line {
+      min-height: 0.6rem;
+      padding-right: 0;
+      padding-left:0;
+      .am-list-content {
+        font-size: 0;
+        flex: 0;
+      }
+      .am-list-extra{
+        flex:6;
+        font-size:0.3rem;
+        padding:0;
+        text-align:left;
+        padding-left: 1.1rem;
+        height: .7rem;
+        line-height: .7rem;
+        background: url(../images/user_location.png) no-repeat;
+        background-size: 7%;
+        background-position: .15rem .08rem;
+      }
+      .am-list-arrow{
+        width:0.3rem;
+        height:0.3rem;
+      }
+    }
+  }
+
+
+  /*switch*/
+  .am-switch{
+    position: absolute;
+    top: .28rem;
+    right: .6rem;
+  }
+
+  .am-switch .checkbox {
+    width: 1.02rem;
+    height: 0.62rem;
+    border-radius: 0.62rem;
+  }
+  .am-switch .checkbox:before {
+    left: 0.03rem;
+    top: 0.03rem;
+    width: 0.96rem;
+    height: 0.56rem;
+    border-radius: 0.56rem;
+  }
+  .am-switch .checkbox:after {
+    height: 0.56rem;
+    width: 0.56rem;
+    border-radius: 0.56rem;
+    left: 0.03rem;
+    top: 0.03rem;
+    -webkit-transform: translateX(0rem);
+    -ms-transform: translateX(0rem);
+    transform: translateX(0rem);
+    box-shadow: 0.04rem 0.04rem 0.08rem rgba(0, 0, 0, 0.21);
+  }
+  .am-switch input[type="checkbox"]:checked + .checkbox:after {
+    -webkit-transform: translateX(0.4rem);
+    -ms-transform: translateX(0.4rem);
+    transform: translateX(0.4rem);
+  }
+
+  .am-list-body{
+    border-top:0;
+  }
+  .am-list-body:after{
+    border-bottom:0;
+  }
+
+  .am-switch input[type="checkbox"]:checked + .checkbox{
+    background-color: #2BC693;
+  }
+
+}
+
+/*空白高度*/
+.bind-card-wrap .formSpace{
+  height:.3rem;
+}
+
+/*小屏幕*/
+.adapt > div{
+  font-size: 0.28rem;
+  padding:0.28rem 0.4rem 0;
+}
+
+.adapt{
+  .bind-card-wrap{
+    padding:0;
+  }
+  .am-list-item{
+    padding-bottom: 0.12rem;
+  }
+  .borderLine{
+    margin-bottom: 0.12rem;
+    padding-bottom: 0.12rem;
+  }
+  .subInfoForm{
+    padding-top:.12rem;
+    input{
+      margin-bottom:.12rem;
+    }
+    span{
+      margin-bottom:.12rem;
+    }
+    .am-switch{
+      top:.12rem;
+    }
+  }
+  .submitBtn{
+    padding:0 .2rem;
+    margin-top:10%;
+    button{
+      font-size:.30rem;
+      padding: .12rem 0;
+    }
+    .text{
+      font-size:12px;
+    }
+    a{
+      font-size:12px;
+    }
+  }
+  .check-bank-card{
+    flex:7;
+    font-size:.26rem;
+  }
+}
+
+/*tips*/
+.topTips{
+  text-align: center;
+  height:1rem;
+  span{
+    display: inline-block;
+    margin-top: .35rem;
+    padding-left:.6rem;
+    color: #646464;
+    background: url(../images/warning-icon.png) no-repeat;
+    background-size: 7%;
+  }
+}
+
+
+
+
+/*contract*/
+.authorize{
+  height:.7rem;
+  padding-left:.4rem;
+  background-size: 4.5%;
+  display: flex;
+  line-height: normal;
+  margin-top: .2rem;
+  position: relative;
+  .agree{
+    position: absolute;
+    top:0;
+    left:0;
+    width:.3rem;
+    height:.3rem;
+    background: url(../images/correct.png) no-repeat;
+    background-size:100%;
+    font-size: 0;
+  }
+  .un-agree{
+    background: url(../images/un_correct.png) no-repeat;
+    background-size:100%;
+  }
+  .protocol{
+    flex:1;
+    a{
+      display: inline-block;
+      margin-right:.2rem;
+      line-height:.4rem;
+    }
+  }
+}
+
+
+/*fail-msg*/
+.bind-card-status{
+  .fail-msg{
+    font-size: .30rem;
+    margin-top: .1rem;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .authorize {
+    display: block;
+  }
+}
+
+.bind-card-2 {
+  .submitBtn {
+    margin-top: .9rem;
+  }
+}
+
+.bind-card-20 {
+  .submitBtn {
+    margin-top: .4rem;
+  }
+}
+
+.bind-card-36 {
+  .submitBtn {
+    margin-top: .2rem;
+  }
+}
+
+.bind-card-m {
+  .borderLine {
+    margin-bottom: .1rem;
+    padding-bottom: .1rem;
+  }
+  .subInfoForm {
+    padding: .2rem .6rem;
+    input {
+      margin-bottom: .1rem;
+    }
+  }
+}
+
+.bind-card-b {
+  .borderLine {
+    margin-bottom: .1rem;
+    padding-bottom: .1rem;
+  }
+  .subInfoForm {
+    padding: .1rem .4rem;
+    input {
+      margin-bottom: .1rem;
+    }
+  }
+  .submitBtn {
+    margin-top: .5rem;
+  }
+}
+

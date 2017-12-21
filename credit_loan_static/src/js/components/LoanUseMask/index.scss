@@ -1,0 +1,51 @@
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  .maskShadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+  }
+  .maskMain {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    .maskMainTop {
+      display: flex;
+      border-bottom: 1px solid #E9E9E9;
+      padding: .3rem;
+      font-size: .32rem;
+      .maskMainTopLeft {
+        flex: 1;
+      }
+      .maskMainTopRight {
+        flex: 1;
+        text-align: right;
+        color: #3693FD;
+      }
+    }
+    .maskMainUl {
+      padding: .3rem .5rem;
+      .maskMainLi {
+        font-size: .28rem;
+        color: #646464;
+        padding: .2rem 0;
+        text-align: center;
+        border-bottom: 1px dashed #E1E1E1;
+      }
+      .maskMainLi:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

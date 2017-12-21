@@ -1,0 +1,20 @@
+.loanUseStep {
+  border-top: 1px solid #D6D7DC;
+  padding: .5rem 0;
+  margin-top: .2rem;
+  .loanUseMain {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    .loanUseName {
+      flex: 1;
+      font-size: .34rem;
+    }
+    .loanUseInfo {
+      flex: 1;
+      font-size: .28rem;
+      text-align: right;
+      margin-top: .05rem;
+    }
+  }
+}

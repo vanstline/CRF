@@ -1,0 +1,15 @@
+.shareMain {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
+  .logo {
+    background: url("../../../images/logo.png") no-repeat center center;
+    background-size: 27%;
+    display: block;
+    height: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0;
+  }
+}

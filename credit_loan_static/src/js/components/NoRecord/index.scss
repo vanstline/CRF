@@ -1,0 +1,26 @@
+.root {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  color: #323232;
+  font-size: 0.28rem;
+  color: #323232;
+  line-height: 0.42rem;
+}
+
+.content {
+  width: 2.6rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background: url(../../../images/norecord.png) no-repeat;
+  background-size: 100%;
+  span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+}
